@@ -6,8 +6,8 @@
     box-sizing: border-box;
     outline-style: none;
     border: none;
-       
 }
+
 a{
     color: #f8f8f8;
 }
@@ -131,7 +131,6 @@ select{
         
 }
 #secao-about{
-    height: 100vh;
     padding-top: 60px;
     display: flex;
     align-items: flex-start;
@@ -201,13 +200,13 @@ select{
 #our-features{
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
     padding-top: 60px;
     padding:100px 80px ;
     text-align: center;
 
 }
+
 #our-features>span{
     width: 120px;
     background-color: rgba(113, 171, 238, 0.562);
@@ -220,11 +219,15 @@ select{
 
 }
 .features{
+    
     display: flex;
     text-align: justify;
     justify-content: space-between;
-    gap: 80px;
-    
+    flex-wrap: wrap;
+    background-color: red;
+ }
+ .box{
+     width: 200px
  }
 .accurate>img{
     margin-bottom: 12px
@@ -237,20 +240,20 @@ select{
     margin-bottom: 06px
 }
 .box>button{
-    margin-top: 100px;
+    margin: 20px 0;
     background-color:transparent;
     font-weight: 900;
 }
+
 #pricing{
-    height: 100vh;
-    padding-top: 50px;
-    text-align: center;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     flex-direction: column;
     align-items: center;
+    /*margin:0  50%; @media*/
 }
 #pricing>h4{
-    display: block;
     background-color:rgba(113, 171, 238, 0.562);
     border-radius: 4px;
     width: 120px;
@@ -261,12 +264,16 @@ select{
     margin-top: 6px;
     font-size: 38px;
 }
+
 .conteiner-pricing{
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     gap:30px;
 }
+
+
 .pricing{
     display: flex;
     flex-direction: column;
@@ -274,15 +281,4 @@ select{
     background-color:red;
     height: 400px;
     width: 350px;
-}
-
-
-
-
-
-
-footer{
-    background-color: #333333;
-    height: 40px;
-    color:white;
 }
