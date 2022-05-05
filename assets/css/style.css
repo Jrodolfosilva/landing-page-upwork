@@ -92,7 +92,6 @@ select{
     justify-content: space-between;
     flex-flow: row wrap;
     margin-top: 30px;
-
 }
 .box-principal{
     background-color:#f8f8f8;
@@ -127,8 +126,7 @@ select{
     display: block;
     width: 400px;
     height: 400px;
-    margin-top: 110px;
-        
+    margin-top: 110px;    
 }
 #secao-about{
     padding-top: 60px;
@@ -136,9 +134,8 @@ select{
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-   
 }
+
 .about-img>img{
     width: 600px;
 }
@@ -281,4 +278,40 @@ select{
     background-color:red;
     height: 400px;
     width: 350px;
+}
+
+
+@media (max-width:760px) {
+    .redes{
+        display: none;
+    }
+    .secao-principal{
+        margin-bottom: 100px;
+    }
+      
+    .foto2{
+        display:none;
+    }
+    .box-principalABS>h1{
+        font-size: 74px;
+    }
+    .box-principalABS>span{
+        font-size: 14px;
+    }
+    .about-img>img{
+        width: 400px;
+    }
+    .imagem-about{
+        display: none;
+        width: 200px;
+    }
+}
+@media (max-width:400px) {
+    .box-principalABS>h1{
+        font-size: 48px;
+    }
+    .box-principalABS>span{
+        font-size: 12px;
+    }
+    
 }
