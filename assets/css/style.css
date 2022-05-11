@@ -140,6 +140,7 @@ select{
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .about-img>img{
@@ -152,8 +153,7 @@ select{
     flex-flow: column wrap;
     gap:2.6rem;
     padding: 0px 6rem;
-    margin-top: 3rem;
-    
+    margin-top: 3rem;   
     
 }
 .about-informacao>span{
@@ -197,6 +197,7 @@ select{
     color:#e1e1e1;
     font-weight: bold;
     background-color: rgb(42, 149, 236);
+    cursor: pointer;
 }
 .contato>img{
     width: 5.2rem;
@@ -286,7 +287,10 @@ select{
     height: 400px;
     width: 350px;
 }
-
+footer{
+    background-color: #333333;
+    color: #e1e1e1;
+}
 
 @media (max-width:1024px) {
     html{
@@ -321,8 +325,11 @@ select{
 
 }
 @media (max-width:400px) {
-    body{
-        font-size: 1.8rem;
+    body{   
+        font-size: 1.8rem;      
+    }
+    .contato>span{
+        font-size: 1.6rem;
     }
     
     .box-principal{
