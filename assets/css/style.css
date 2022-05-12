@@ -30,7 +30,7 @@ a{
     align-items: center;
     padding:0.8rem;
     background-color:#333333;
-    
+    position: relative;   
 }
 .secao-opcao{
     display: flex;
@@ -82,6 +82,27 @@ select{
     position: absolute;
     right: 100%;
 }
+/*menu mobile*/
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.4rem;
+    position: absolute;
+    top: auto;
+    left: 90%;
+    display: none;
+}
+.br{
+    display: block;
+    min-width: 3rem;
+    min-height: 0.4rem;
+    background-color: red;
+    
+}
+
+
+
 .redes{
     display: flex;
     align-items: center;
@@ -324,9 +345,80 @@ footer{
     }
 
 }
+@media (max-width:800px) {
+   
+    .menu-mobile{
+        display: flex;
+        cursor: pointer;
+    }
+    .box-social{
+        padding-left: 0px;
+    }
+    
+    main{
+        display: block;
+    }
+    main.ativo{
+        display: none;
+    }
+
+    .secao-opcao>nav>ul{
+        display:none;
+    }
+        
+    .box-menu.ativo{
+        display:flex;
+        flex-direction: column;
+        background-color: #111111;
+        z-index: 99;
+        position: absolute;
+        top:8rem;
+        left: 0px;
+        height:90%;
+        width: 100vw;
+        animation: show .3s linear forwards;
+    }
+    .box-menu.ativo::after{
+        content: "@Desenvoldido por Rodolfo Silva";
+        display: block;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #e1e1e1;
+        bottom:10%;
+        position: absolute;
+
+    }
+    .item-menu.Pricing::before{
+        display: none;
+    }
+    .box-social::before{
+        display: none;
+    }
+    .box-menu.ativo .item-menu>a>img{
+        display: none;
+    }
+     .box-menu.ativo .item-menu>a{
+        font-size: 3rem;
+    }
+    .box-principalABS>h1{
+        font-size: 6rem;
+    }
+    .box-principalABS{
+        left:3rem;
+        top:10%;
+    
+    }
+    .secao-logo>button{
+        display: none;
+    }
+  
+}
 @media (max-width:400px) {
     body{   
         font-size: 1.8rem;      
+    }
+    .box-menu.ativo{
+        height: 70%;
     }
     .contato>span{
         font-size: 1.6rem;
@@ -335,11 +427,7 @@ footer{
     .box-principal{
         height: 60rem;
     }
-    .box-principalABS{
-        left:1rem;
-        top:22%;
-    
-    }
+   
     .box-principalABS>h1{
 
         font-size:4.5rem;
@@ -357,6 +445,16 @@ footer{
     #our-features{
         padding-top: 5rem;
         margin-top: 6rem;
+    }
+    
+}
+
+@keyframes show {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
     }
     
 }
