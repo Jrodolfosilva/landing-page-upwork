@@ -374,7 +374,7 @@ footer{
         position: absolute;
         top:8rem;
         left: 0px;
-        height:90%;
+        height:100%;
         width: 100vw;
         animation: show .3s linear forwards;
     }
