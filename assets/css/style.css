@@ -97,12 +97,8 @@ select{
     display: block;
     min-width: 3rem;
     min-height: 0.4rem;
-    background-color: red;
-    
+    background-color: red; 
 }
-
-
-
 .redes{
     display: flex;
     align-items: center;
@@ -370,8 +366,9 @@ footer{
         display:flex;
         flex-direction: column;
         background-color: #111111;
-        z-index: 99;
+        z-index: 1;
         position: absolute;
+        padding-top: 1rem;
         top:8rem;
         left: 0px;
         height:100%;
@@ -418,7 +415,7 @@ footer{
         font-size: 1.8rem;      
     }
     .box-menu.ativo{
-        height: 70%;
+        height: 100%;
     }
     .contato>span{
         font-size: 1.6rem;
@@ -452,9 +449,11 @@ footer{
 @keyframes show {
     0%{
         opacity: 0.5;
+       
     }
     100%{
         opacity: 1;
+       
     }
     
 }
