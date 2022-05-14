@@ -3,12 +3,17 @@ const boxSocial = document.querySelector(".box-social-mobile")
 const menuMobile = document.querySelector(".menu-mobile");
 const boxMenu = document.querySelector(".box-menu")
 const itemMenu = document.querySelectorAll(".item-menu");
+const barras =document.querySelectorAll(".br")
+
 
 function showMenu(){
     
     boxMenu.classList.toggle('ativo')
     main.classList.toggle('ativo')
     boxSocial.classList.toggle("ativo")
+    barras.forEach((i)=>{
+        i.classList.toggle("ativo")
+    })
 }
 
 

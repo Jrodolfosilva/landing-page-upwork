@@ -107,7 +107,7 @@ select{
     display: block;
     min-width: 3rem;
     min-height: 0.4rem;
-    background-color: red; 
+    background-color:rgb(27, 143, 252);
 }
 .redes{
     display: flex;
@@ -355,7 +355,10 @@ footer{
 
 }
 @media (max-width:800px) {
-   
+    .secao-logo>h1{
+        color: #e1e1e1;
+    }
+     
     .menu-mobile{
         display: flex;
         cursor: pointer;
@@ -381,7 +384,7 @@ footer{
         background-color: #111111;
         z-index: 1;
         position: absolute;
-        padding-top: 1rem;
+        padding-top: 7rem;
         top:8rem;
         left: 0px;
         height:100%;
@@ -398,6 +401,20 @@ footer{
         bottom:50%;
         position: absolute;
 
+    }
+    /*animação menu*/
+    .br{
+        transition: 0.5s;
+    }
+    .br.ativo{
+       
+        background-color: rgb(255, 0, 0);
+    }
+    .br.a.ativo{
+        transform: translateX(20%);
+    }
+    .br.c.ativo{
+        transform: translateX(-20%);
     }
     .item-menu.Pricing::before{
         display: none;
@@ -417,7 +434,6 @@ footer{
     .box-principalABS{
         left:3rem;
         top:10%;
-    
     }
     .secao-logo>button{
         display: none;
