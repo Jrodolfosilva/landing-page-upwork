@@ -67,6 +67,16 @@ a{
     padding-left: 3.0rem;
     position: relative;
 }
+.box-social-mobile{
+    display: none;
+}
+.box-social-mobile.ativo{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 3.0rem;
+    position: relative;
+}
 select{
     background-color: #111111;
     color: #e1e1e1;
@@ -106,6 +116,9 @@ select{
 }
 
 .box-social>li>a>img{
+    width: 20px;
+}
+.box-social-mobile.ativo>li>a>img{
     width: 20px;
 
 }
@@ -347,7 +360,7 @@ footer{
         display: flex;
         cursor: pointer;
     }
-    .box-social{
+    .box-social-mobile.ativo{
         padding-left: 0px;
     }
     
