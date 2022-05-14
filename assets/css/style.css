@@ -386,16 +386,16 @@ footer{
         left: 0px;
         height:100%;
         width: 100vw;
-        overflow: none;
         animation: show .3s linear forwards;
     }
+    
     .box-menu.ativo::after{
         content: "@Desenvoldido por Rodolfo Silva";
         display: block;
         font-size: 1.2rem;
         text-align: center;
         color: #e1e1e1;
-        bottom:40%;
+        bottom:50%;
         position: absolute;
 
     }
