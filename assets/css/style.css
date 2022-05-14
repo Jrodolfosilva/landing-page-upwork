@@ -17,6 +17,9 @@ body{
 a{
     color: #f8f8f8;
 }
+.secao-logo>h1{
+    color: #e1e1e1;
+}
 .secao-logo>button{
     background-color: rgb(83, 194, 83);
     color: #e1e1e1;
@@ -355,10 +358,7 @@ footer{
 
 }
 @media (max-width:800px) {
-    .secao-logo>h1{
-        color: #e1e1e1;
-    }
-     
+      
     .menu-mobile{
         display: flex;
         cursor: pointer;
@@ -370,7 +370,7 @@ footer{
     main{
         display: block;
     }
-    main.ativo{
+    main.desativado{
         display: none;
     }
 
@@ -398,7 +398,7 @@ footer{
         font-size: 1.2rem;
         text-align: center;
         color: #e1e1e1;
-        bottom:50%;
+        bottom:20%;
         position: absolute;
 
     }
