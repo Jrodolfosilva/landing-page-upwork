@@ -386,6 +386,7 @@ footer{
         left: 0px;
         height:100%;
         width: 100vw;
+        overflow: none;
         animation: show .3s linear forwards;
     }
     .box-menu.ativo::after{
@@ -394,7 +395,7 @@ footer{
         font-size: 1.2rem;
         text-align: center;
         color: #e1e1e1;
-        bottom:10%;
+        bottom:40%;
         position: absolute;
 
     }
