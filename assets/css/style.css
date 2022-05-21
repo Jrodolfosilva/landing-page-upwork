@@ -13,7 +13,6 @@ html{
 body{
     font-size: 1.8rem;
 }
-
 a{
     color: #f8f8f8;
 }
@@ -41,8 +40,7 @@ a{
     justify-content: space-between;
     padding:0px 6.0rem;
     height: 4.0rem;
-    background-color: #111111;
-    
+    background-color: #111111;   
 }
 .box-menu{
     display: flex;
@@ -60,8 +58,7 @@ a{
     position: absolute;
     width: 0.1rem;
     height: 1.5rem;
-    margin-left:-1.5rem;
-        
+    margin-left:-1.5rem;      
 }
 .box-social{
     display: flex;
@@ -85,7 +82,6 @@ select{
     color: #e1e1e1;
     cursor: pointer;
 }
-
 .box-social::before{
     display: block;
     content:"";
@@ -112,18 +108,17 @@ select{
     min-height: 0.4rem;
     background-color:rgb(27, 143, 252);
 }
+/**/
 .redes{
     display: flex;
     align-items: center;
     gap: 30px;
 }
-
 .box-social>li>a>img{
     width: 20px;
 }
 .box-social-mobile.ativo>li>a>img{
     width: 20px;
-
 }
 .secao-principal{
     display: flex;
@@ -135,7 +130,6 @@ select{
     background-color:#f8f8f8;
     width: 70rem;
     height: 50rem;
-
 }
 .box-principalABS{
     position: absolute;
@@ -173,21 +167,17 @@ select{
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
 }
-
 .about-img>img{
     width: 60rem;
     height: 45rem;
 }
-
 .about-informacao{
     display: flex;
     flex-flow: column wrap;
     gap:2.6rem;
     padding: 0px 6rem;
     margin-top: 3rem;   
-    
 }
 .about-informacao>span{
     display: block;
@@ -204,15 +194,12 @@ select{
     align-items: center;
     justify-content: space-between;
     gap:3rem;
-
 }
 .servicos>label{
     display:flex;
     flex-direction: column;
     align-items: center;
-
 }
-
 .servicos>label>img{
     width: 10rem;
 }
@@ -221,7 +208,6 @@ select{
     flex-wrap: wrap;
     padding-top: 3rem;
     border-top: 2px solid #acacac46;
-
 }
 .contato>button{
     width: 12rem;
@@ -235,7 +221,6 @@ select{
 .contato>img{
     width: 5.2rem;
 }
-
 #our-features{
     display: flex;
     flex-direction: column;
@@ -244,7 +229,6 @@ select{
     text-align: center;
     margin-bottom: 4rem;
 }
-
 #our-features>span{
     width: auto;
     background-color: rgba(113, 171, 238, 0.562);
@@ -257,7 +241,6 @@ select{
 
 }
 .features{
-    
     display: flex;
     text-align: justify;
     justify-content: space-between;
@@ -273,7 +256,6 @@ select{
 .key-insights>img{
     margin-bottom: 0.8rem
 }
-
 .defect-forecasting>img{
     margin-bottom: 0.6rem
 }
@@ -281,50 +263,96 @@ select{
     margin: 2rem 0;
     background-color:transparent;
 }
-
 #pricing{
     display: flex;
     justify-content: space-between;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    background-color: #efefef;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    min-height: 100vh;
 }
 #pricing>h4{
     background-color:rgba(113, 171, 238, 0.562);
     border-radius: 4px;
     width: 120px;
     padding: 1px 4px;
-    margin-bottom: 2.4rem;
 }
-
 #pricing>h1{
-    margin-top: 6px;
     font-size: 2.7rem;
 }
-
 .conteiner-pricing{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     gap:30px;
+    margin-top: 3rem;
 }
-
-
 .pricing{
     display: flex;
     flex-direction: column;
-    margin-top: 48px;
-    background-color:rgba(113, 171, 238, 0.562);
+    background-color:white;
     height: 400px;
     width: 350px;
+   
+}
+.pricing.a,.pricing.c{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+.pricing.a>span,button,.pricing.a>span,button{
+    align-self: flex-start;
+    margin-left: 3rem;
+    
+}
+.pricing.a>button, .pricing.c>button {
+    border:1px solid rgb(42, 149, 236);
+    color:black;
+    width: 12rem;
+    height: 4rem;
+    margin: 3rem;
+
+}
+.v{
+    width: 2rem;
+}
+.pricing.a>div,.pricing.c > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:1rem;
+    border-bottom: 2px solid rgba(163, 157, 157, 0.664);
+    height: 40%;
+    width: 80%;
+}
+
+.icon-pricing.a{
+    width: 9rem;
+
+}
+
+   
+.icon-pricing.b{
+    width:10rem;
+
+
+}
+
+.pricing.c>span,button{
+    align-self: flex-start;
+    margin-left: 3rem;
 }
 footer{
     background-color: #333333;
     color: #e1e1e1;
 }
-
 @media (max-width:1024px) {
     html{
         font-size: 56%;
@@ -478,12 +506,7 @@ footer{
 
 @keyframes show {
     0%{
-        opacity: 0.5;
-       
-    }
+        opacity: 0.5    }
     100%{
-        opacity: 1;
-       
-    }
-    
+        opacity: 1;   }
 }
