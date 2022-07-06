@@ -170,7 +170,7 @@ select{
 }
 .about-img>img{
     width: 60rem;
-    height: 45rem;
+    height: 52rem;
 }
 .about-informacao{
     display: flex;
@@ -283,10 +283,11 @@ select{
     margin-bottom: 1rem;
     font-size: 2.7rem;
 }
-.conteiner-pricing{
+.container-pricing{
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: flex-end;
+    gap:3rem;
 }
 .pricing{
     display: flex;
@@ -368,7 +369,7 @@ footer{
         margin-top: 15vh;
     }
 
-    .conteiner-pricing{
+    .container-pricing{
         justify-content: center;
     }
     .contato>img{
@@ -428,7 +429,6 @@ footer{
         position: absolute;
 
     }
-    /*animação menu*/
     .br{
         transition: 0.5s;
     }
@@ -486,6 +486,9 @@ footer{
         font-size:4.5rem;
         letter-spacing: 2px;
     }
+    .about-informacao{
+        padding: 2.5rem;
+    }
     #secao-about{
         margin-top: 3rem;
         padding-top: 0rem;
@@ -503,6 +506,7 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        width: 26rem;
     }
     .contato>button{
         margin-left: 0px;
